@@ -1,0 +1,15 @@
+<form action="/result" method="POST" role="form">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.a1.label }} {{ form.a1() }}
+    </div>
+    {% for b in form.a2 %}
+    <div>
+        {{ b.form.b1.label }} {{ b.form.b1 }}
+        {{ b.form.b2.label }} {{ b.form.b2}}
+    </div>
+    {% endfor %}
+    <div>
+        {{ form.submit }}
+    </div>
+</form>
