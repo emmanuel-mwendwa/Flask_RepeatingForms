@@ -1,0 +1,7 @@
+/env
+__pycache__
+# ignore the database
+data-dev.sqlite
+*.sqlite
+*.sqlite3
+.env
